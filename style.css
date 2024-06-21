@@ -1,0 +1,138 @@
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Kanit", sans-serif;
+            
+        }
+        .header{
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(8, 9, 18, 0.7),rgba(121, 134, 185, 0.7)),url(images/mainb.png);
+            background-position: center;
+            position: relative;
+            background-size: cover ;
+        }
+        .logo{
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+        }
+        .logo:hover{
+            box-shadow: 0 0 50px 0;
+            width: 200px;
+            height: auto;
+            transition: 2s;
+        }
+        
+       
+        nav{
+            display: flex;
+            padding: 2% 5% ;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .nav-links{
+            flex: 1;
+            text-align: right;
+        }
+
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 12px;
+
+        }
+        .nav-links ul li a{
+            color: aliceblue;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .nav-links ul li::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: red;
+            display: block;
+            border-radius: 25px;
+            margin: auto;
+            transition: 0.5s;
+        }
+        .nav-links ul li:hover:after{
+            width: 100%;
+        }
+        .intro{
+            color: white;
+            width: 90%;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+           
+        }
+        .intro h1{
+            font-size: 42px;
+        }
+        .intro p{
+            margin: 10px;
+            font-size: 32px;
+            
+        }
+        .visit-us-btn{
+            display: inline-block;
+            color: aliceblue;
+            text-decoration: none;
+            padding: 5px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border: 1px solid;
+            border-color: chartreuse;
+            font-size: 20px;
+            background: transparent;
+            cursor: pointer;
+        }
+        .visit-us-btn:hover{
+            background-color: skyblue;
+            border-radius: 20px;
+            border: black;
+            padding: 10px;
+            transition: 1s;
+            color: black;
+        }
+        .intro p{
+            margin-top: 50px;
+        }
+        span{
+            color: greenyellow;
+        }
+        .intro .CVT{
+            font-size: 60px;
+        }
+        @media (min-width: 319px) and (max-width: 480px) {
+            .intro h1{
+                font-size: 200%;
+            }
+            .intro p{
+                margin: 5%;
+                font-size: 100%;
+            }
+            .intro h2{
+                font-size: 150%;
+            }
+            .logo{
+                width: 60px;
+                height: auto;
+                margin-top: 20px;
+            }
+            .nav{
+                justify-content: space-around;
+            }
+            .intro p.CVT{
+                font-size: 40px ;
+            }
+            .intro{
+                top: 50%;
+            }
+          }
+        
